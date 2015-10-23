@@ -52,6 +52,7 @@ p
 /* Special ID tags */
 div.header
 {
+	margin-top:30px;
 	color:white;
 	margin-left:30px;
 	width:1000px;
@@ -92,8 +93,18 @@ div.contentArea
 	left:15%;
 	background-color:#1C1C1C;
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
+	overflow:auto;
 }
-
+p.contentArea
+{
+	color:white;
+	margin-left:20px;
+	padding-top:10px;
+	text-decoration: none;
+	font-size:15px;
+	width:600px;
+	line-height:1.45;
+}
 div.footer
 {
 	background-color:black;
@@ -118,8 +129,9 @@ div.footer
 	height:250px;
 	vertical-align:text-top;
 	float:right;
-	padding-right:30px;
 	margin:10px;
+	border-radius:10px;
+	border: 1px solid black;
 }
 
 .socialLinks
