@@ -4,6 +4,11 @@
 /*Stylesheet for personal website */
 
 /* General Tags */
+html {
+	font-size: .85rem;
+}
+
+
 h3
 {
 	font-size:20px;
@@ -12,12 +17,15 @@ h3
 	margin-left:20px;
 }
 
-h2 
+
+
+h2
 {
-	font-size:25px;
+	font-size: 25px;
 	font-family:serif;
 	padding-top:20px;
-	margin-left:20px;
+	margin-left:30px;
+	font-weight: 0px;
 }
 
 h1
@@ -44,9 +52,9 @@ body
 	min-width: 100vw;
 	flex-direction:column;
 }
-img 
+.header > img 
 {
-	max-width: 50vw;
+	max-width: 75vw;
 	max-height: 50vh;
 	height:100px;
 }
@@ -56,7 +64,7 @@ p
 	margin-left:20px;
 	padding-top:10px;
 	text-decoration: none;
-	font-size:.9rem;
+	font-size:1.2rem;
 }
 
 
@@ -66,7 +74,7 @@ div.header
 {
 	margin-top:30px;
 	width:1000px;
-	max-width: 50vw;
+	max-width: 75vw;
 	height:100px;
 	box-shadow: 5px 1px 1px black,-2px 1px 1px black;
 	background-color:#101010;
@@ -79,7 +87,7 @@ div.navigation
 	float:left;
 	background-color:#AE0000;
 	width:1000px;
-	max-width: 50vw;
+	max-width: 75vw;
 	height:50px;
 	border:thin;
 	border-top:solid;
@@ -96,20 +104,27 @@ div.contentArea
 {
 	color: #EDEDED;
 	padding:0px;
-	font-size: 18px;
 	width:1000px;
-	max-width: 50vw;
-	height:500px;
+	max-width: 75vw;
+	height:450px;
+	min-height: 50vh;
 	background-color:#1C1C1C;
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
 	overflow:auto;
 }
+
+h2.contentArea
+{
+	font-family:serif;
+	padding-top:20px;
+	margin-left:20px;
+	font-weight: 0px;
+}
 p.contentArea
 {
 	margin-left:20px;
-	padding-top:10px;
+	padding:10px;
 	text-decoration: none;
-	font-size:.9rem;
 	min-width: 25vw;
 	line-height:1.45;
 	overflow: hidden;
@@ -118,7 +133,8 @@ div.footer
 {
 	background-color:black;
 	width:1000px;
-	max-width: 50vw;
+	max-width: 75vw;
+	min-height: 5vh;
 	height:50px;
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
 }
@@ -161,7 +177,7 @@ ul.nav
 	overflow:hidden;
 	margin:0px;
 	margin-left:0%;
-	width:50vw;
+	width:75vw;
 }
 
 li.nav
@@ -171,6 +187,7 @@ li.nav
 	margin-right:.75vw;
 	flex-shrink:0;
 }
+
 
 dl.contact
 {
@@ -187,7 +204,11 @@ dd.contact
 	padding-bottom:5px;
 	margin-left:0px;
 }
+a
+{
+	font-size: 1.3rem;
 
+}
 a:link,a:visited
 {
 	text-transform: uppercase;
@@ -200,10 +221,37 @@ a:link,a:visited
 
 a:hover
 {
-
 	text-transform: uppercase;
 	text-align: center;
 	color: orange;
-	border-bottom: 1px dotted black;
 }
 
+
+/* Bootstrap override style */
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav>li>a {
+    position: relative;
+    display: inherit;
+    padding: 5px 15px;
+}
+
+img.img-responsive
+{
+	max-width: 100%;
+	padding-left: 30px;
+	display: block;
+	min-height: 12vh;
+	height:auto;
+	width: auto;
+}
+
+.row {
+    max-width: 45vw;
+    margin-left: 20px;
+    min-width: 90%;
+}

@@ -5,7 +5,7 @@ var stringSource = new Array(
 	"This is a picture of a UI script I developed. The script uses coroutines to create fluid animation," +
     " and hold data for other parts of the UI. <br>" +
     "Here is a code snippet from the script <br>"+
-    '<img src="resources/UpdateScoreSource.png" alt="code snippet">',
+    '<img src="resources/UpdateScoreSource.png" alt="code snippet" width="550px" height="400px">',
     "This portfolio contains pictures of my work during past projects." +
     " If you click on the image, you will see different pictures of work I've done in the past."); //Descriptions for each image on portfolio project
 var i = 0;
