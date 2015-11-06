@@ -8,19 +8,14 @@ html {
 	font-size: .85rem;
 }
 
-
-h3
-{
+h3 {
 	font-size:20px;
 	font-family:serif;
 	padding-top:20px;
 	margin-left:20px;
 }
 
-
-
-h2
-{
+h2 {
 	font-size: 25px;
 	font-family:serif;
 	padding-top:20px;
@@ -28,14 +23,12 @@ h2
 	font-weight: 0px;
 }
 
-h1
-{
+h1 {
 	padding-top:30px;
 	padding-left:5px;
 }
 
-body
-{
+body {
 	color: white;
 	background-color: #0B0B0B;
 	margin:0px;
@@ -52,15 +45,9 @@ body
 	min-width: 100vw;
 	flex-direction:column;
 }
-.header > img 
-{
-	max-width: 75vw;
-	max-height: 50vh;
-	height:100px;
-}
 
-p
-{
+
+p {
 	margin-left:20px;
 	padding-top:10px;
 	text-decoration: none;
@@ -70,23 +57,27 @@ p
 
 
 /* Special ID tags */
-div.header
-{
+div.header {
 	margin-top:30px;
-	width:1000px;
+	width:100%;
 	max-width: 75vw;
 	height:100px;
 	box-shadow: 5px 1px 1px black,-2px 1px 1px black;
 	background-color:#101010;
 }
 
-div.navigation
-{
+img.header {
+	width:100%;
+	max-height: 50vh;
+	height:100px;
+}
+
+div.navigation {
 	text-decoration:none;
 	padding:0;
 	float:left;
 	background-color:#AE0000;
-	width:1000px;
+	width:100%;
 	max-width: 75vw;
 	height:50px;
 	border:thin;
@@ -100,11 +91,10 @@ div.navigation
 
 
 /*Position */
-div.contentArea
-{
+div.contentArea {
 	color: #EDEDED;
 	padding:0px;
-	width:1000px;
+	width:100%;
 	max-width: 75vw;
 	height:450px;
 	min-height: 50vh;
@@ -113,15 +103,18 @@ div.contentArea
 	overflow:auto;
 }
 
-h2.contentArea
-{
+h2.contentArea {
 	font-family:serif;
 	padding-top:20px;
 	margin-left:20px;
 	font-weight: 0px;
 }
-p.contentArea
-{
+
+span.contentArea {
+	font-size: 1.6rem;
+}
+
+p.contentArea {
 	margin-left:20px;
 	padding:10px;
 	text-decoration: none;
@@ -129,24 +122,22 @@ p.contentArea
 	line-height:1.45;
 	overflow: hidden;
 }
-div.footer
-{
+
+div.footer {
 	background-color:black;
-	width:1000px;
+	width:100%;
 	max-width: 75vw;
 	min-height: 5vh;
 	height:50px;
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
 }
 
-.objectDisplay
-{
+.objectDisplay {
 	width:960px;
 	height:300px;
 }
 
-#portfolioImage
-{
+#portfolioImage {
 	width:250px;
 	height:250px;
 	vertical-align:text-top;
@@ -156,8 +147,7 @@ div.footer
 	border: 1px solid black;
 }
 
-.socialLinks
-{
+.socialLinks {
 	text-align: right;
 	float:right;
 	height:32px;
@@ -177,40 +167,46 @@ ul.nav
 	overflow:hidden;
 	margin:0px;
 	margin-left:0%;
-	width:75vw;
+	width:100%;
 }
 
-li.nav
-{
+li.nav {
 	float:left;
 	padding-top:15px;
-	margin-right:.75vw;
+	display:block;
+	width:auto;
 	flex-shrink:0;
+	padding-left: .5%;
+	padding-right: .5%;
+	margin-left: 0%;
+}
+
+li~li.nav {
+	border-left: 1px solid #000000;
 }
 
 
-dl.contact
-{
+dl.contact {
 	margin-left:30px;
 }
-dt.contact
-{
+
+dt.contact {
 	font-family:serif;
 	font-size:20px;
 }
-dd.contact
-{
+
+dd.contact {
 	font-size:15px;
 	padding-bottom:5px;
 	margin-left:0px;
 }
-a
-{
+
+a {
 	font-size: 1.3rem;
 
 }
-a:link,a:visited
-{
+
+a:link,a:visited {
 	text-transform: uppercase;
 	font-size: .9rem;
 	text-align: center;
@@ -219,8 +215,7 @@ a:link,a:visited
 
 }
 
-a:hover
-{
+a:hover {
 	text-transform: uppercase;
 	text-align: center;
 	color: orange;
@@ -240,8 +235,7 @@ a:hover
     padding: 5px 15px;
 }
 
-img.img-responsive
-{
+img.img-responsive {
 	max-width: 100%;
 	padding-left: 30px;
 	display: block;
