@@ -91,7 +91,8 @@ img.header {
 nav.navigation {
 	max-width: 75vw;
 	width:100%;
-	height:50px;
+	height:100%;
+	max-height: 10vh;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	border:none;
@@ -100,9 +101,9 @@ div.navigation {
 	font-size: 30px;
 	text-decoration:none;
 	padding:0;
-	float:left;
 	background-color:#AE0000;
 	width:100%;
+	max-height: 10vh;
 	max-width: 75vw;
 	height:50px;
 	border:thin;
@@ -117,23 +118,21 @@ div.navigation {
 ul.nav
 {
 	list-style-type:none;
-	overflow:hidden;
 	margin:0px;
 	margin-left:0%;
-	width:100%;
+	width:auto;
 	height: 100%;
+	background-color:#AE0000;
 }
 
 li.nav {
-	float:left;
-	padding-top:15px;
+	padding-top:0px;
 	display:block;
+	color:white;
 	height:100%;
 	width:auto;
-	flex-shrink:0;
-	padding-left: .5%;
-	padding-right: .5%;
-	margin-left: 1.25%;
+	font-size: 1rem;
+	background-color: #AE0000;
 }
 
 
@@ -233,7 +232,7 @@ a:link,a:visited {
 a:hover {
 	text-transform: uppercase;
 	text-align: center;
-	color: black;
+	color: white;
 }
 
 /* Bootstrap override style */
@@ -261,4 +260,37 @@ img.img-responsive {
     max-width: 45vw;
     margin-left: 20px;
     min-width: 90%;
+}
+.dropdown-menu>li>a {
+	color:white;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #AE0000;
+    border-color:#AE0000;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, 
+.btn-primary:active.focus, .btn-primary:active:focus, 
+.btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, 
+.open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #AE0000;
+    border-color: #AE0000;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #AE0000;
+    border-color: #AE0000;
+}
+.btn:focus {
+  background-color: #AE0000;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #AE0000;
+    border-color: #AE0000;
 }

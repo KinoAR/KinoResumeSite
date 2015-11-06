@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script></script>
     </head>
     <body>
      <!-- Header Area -->
@@ -16,17 +15,20 @@
      <h1> Kino Rose </h1>
      </div>
      <!-- Navigation -->
-     <div class="navigation">
-     <nav>
-         <ul class="nav">
+    <nav class="navigation navbar">
+        <div class="navigation container-fluid dropdown">
+         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Navigation
+         <span class="caret"></span></button>
+         <ul class="nav dropdown-menu">
            <li class="nav"><a href="index.html">Home</a></li> 
            <li class="nav"><a href="resume.html">Resume</a></li> 
            <li class="nav"><a href="portfolio.html">Portfolio</a></li>
            <li class="nav"><a href="https://lambdascorner.wordpress.com/" target="_blank">Blog</a></li> 
            <li class="nav"><a href="contact.html">Contact</a></li>
          </ul>
+        </div>
+      </div>
       </nav>
-     </div>
      <!-- Content Area -->
      <div class="contentArea">
       <h2 class="contentArea"><a href="resources/KinoResume.pdf"><span class="contentArea">Resume</span></a></h2>
@@ -72,4 +74,8 @@
       </footer>
      </div>
     </body>
+     <!--Script Area-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="websiteScript.js"></script>
 </html>
