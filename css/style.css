@@ -1,4 +1,6 @@
-/* All style should go in this document. */
+/* Imported StyleSheets */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans|Open+Sans|Lora|Roboto+Condensed);
 
 
 /*Stylesheet for personal website */
@@ -10,20 +12,21 @@ html {
 
 h3 {
 	font-size:20px;
-	font-family:serif;
+	font-family: 'Lora', serif;
 	padding-top:20px;
 	margin-left:20px;
 }
 
 h2 {
 	font-size: 25px;
-	font-family:serif;
+	font-family: 'Lora', serif;
 	padding-top:20px;
 	margin-left:30px;
 	font-weight: 0px;
 }
 
 h1 {
+	font-family: 'Lora', serif;
 	padding-top:30px;
 	padding-left:5px;
 }
@@ -31,9 +34,8 @@ h1 {
 body {
 	color: white;
 	background-color: #0B0B0B;
-	margin:0px;
 	padding-left:0px;
-	font-family:sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	display:flex;
 	flex-wrap:wrap;
 	align-self:center;
@@ -54,24 +56,37 @@ p {
 	font-size:1.2rem;
 }
 
+/* Class IDs */
+#portfolioImage {
+	width:250px;
+	height:250px;
+	vertical-align:text-top;
+	float:right;
+	margin:10px;
+	border-radius:10px;
+	border: 1px solid black;
+}
 
+/* Class tags */
 
-/* Special ID tags */
+/*Header */
 div.header {
-	margin-top:30px;
+	margin-top:15px;
 	width:100%;
 	max-width: 75vw;
-	height:100px;
+	height:15vh;
 	box-shadow: 5px 1px 1px black,-2px 1px 1px black;
 	background-color:#101010;
+	background-size:cover;
+	background-image: url("../resources/Banner.png")
 }
 
 img.header {
 	width:100%;
-	max-height: 50vh;
-	height:100px;
+	height:100%;
 }
 
+/*Navigation */
 div.navigation {
 	text-decoration:none;
 	padding:0;
@@ -89,15 +104,37 @@ div.navigation {
 	top:0px;
 }
 
+ul.nav
+{
+	list-style-type:none;
+	overflow:hidden;
+	margin:0px;
+	margin-left:0%;
+	width:100%;
+	height: 100%;
+}
 
-/*Position */
+li.nav {
+	float:left;
+	padding-top:15px;
+	display:block;
+	height:100%;
+	width:auto;
+	flex-shrink:0;
+	padding-left: .5%;
+	padding-right: .5%;
+	margin-left: 1.25%;
+}
+
+
+/* Content Area */
 div.contentArea {
 	color: #EDEDED;
 	padding:0px;
 	width:100%;
 	max-width: 75vw;
-	height:450px;
-	min-height: 50vh;
+	min-height:65vh; 
+	max-height: 65vh;
 	background-color:#1C1C1C;
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
 	overflow:auto;
@@ -123,6 +160,7 @@ p.contentArea {
 	overflow: hidden;
 }
 
+ /* Footer */
 div.footer {
 	background-color:black;
 	width:100%;
@@ -132,19 +170,14 @@ div.footer {
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
 }
 
+ p.footer
+ {
+ 	margin-top:0px;
+ }
+
 .objectDisplay {
 	width:960px;
 	height:300px;
-}
-
-#portfolioImage {
-	width:250px;
-	height:250px;
-	vertical-align:text-top;
-	float:right;
-	margin:10px;
-	border-radius:10px;
-	border: 1px solid black;
 }
 
 .socialLinks {
@@ -156,36 +189,7 @@ div.footer {
 	margin:0px 10px;
 }
 
-/* Class IDs */
- p.footer
- {
- 	margin-top:0px;
- }
-ul.nav
-{
-	list-style-type:none;
-	overflow:hidden;
-	margin:0px;
-	margin-left:0%;
-	width:100%;
-}
-
-li.nav {
-	float:left;
-	padding-top:15px;
-	display:block;
-	width:auto;
-	flex-shrink:0;
-	padding-left: .5%;
-	padding-right: .5%;
-	margin-left: 0%;
-}
-
-li~li.nav {
-	border-left: 1px solid #000000;
-}
-
-
+/*Contact & Resume Styles */
 dl.contact {
 	margin-left:30px;
 }
@@ -201,6 +205,7 @@ dd.contact {
 	margin-left:0px;
 }
 
+/* Links */
 a {
 	font-size: 1.3rem;
 
@@ -218,12 +223,10 @@ a:link,a:visited {
 a:hover {
 	text-transform: uppercase;
 	text-align: center;
-	color: orange;
+	color: black;
 }
 
-
 /* Bootstrap override style */
-
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: transparent;
@@ -239,7 +242,7 @@ img.img-responsive {
 	max-width: 100%;
 	padding-left: 30px;
 	display: block;
-	min-height: 15vh;
+	min-height: 17vh;
 	height:auto;
 	width: auto;
 }
