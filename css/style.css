@@ -88,6 +88,14 @@ img.header {
 }
 
 /*Navigation */
+nav.navigation {
+	max-width: 75vw;
+	width:100%;
+	height:50px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	border:none;
+}
 div.navigation {
 	font-size: 30px;
 	text-decoration:none;
