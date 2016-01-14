@@ -59,7 +59,9 @@ p {
 	border: 1px solid black;
 }
 div.portfolio-item {
-  min-height: 220px;
+  min-height: 250px;
+  max-height: 250px;
+  margin-bottom: 20px;
 }
 /* Class tags */
 
@@ -250,12 +252,8 @@ a:hover {
 }
 
 img.img-responsive {
-	max-width: 100%;
-	padding-left: 30px;
-	display: block;
-	min-height: 17vh;
-	height:auto;
-	width: auto;
+ min-height: 175px;
+ max-height: 250px;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: rgb(0, 0, 0);
