@@ -21,9 +21,9 @@ resumeWebsite.config(['$routeProvider', '$locationProvider',
       controller: 'ViewCtrl'
     })
     .otherwise({
-      redirectTo: 'index.html'
+      redirectTo: '/'
     });
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
 }]);
 
