@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="resumeWebsite">
   <head>
     <meta charset="UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">    
+    <!-- Base Url -->
+    <base href="/">
   </head>
-  <body class="container-fluid">
+  <body ng-controller="ViewCtrl as main" class="container-fluid">
      <!-- Header Area -->
     <div class="row header">
       <div class="col-xs-12">
@@ -33,25 +35,21 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-             <li class="nav"><a href="index.html">Home</a></li> 
-             <li class="nav"><a href="resume.html">Resume</a></li> 
-             <li class="nav"><a href="portfolio.html">Portfolio</a></li>
+             <li class="nav"><a href="/">Home</a></li> 
+             <li class="nav"><a href="resumePage">Resume</a></li> 
+             <li class="nav"><a href="portfolio">Portfolio</a></li>
              <li class="nav"><a href="https://lambdascorner.wordpress.com/" target="_blank">Blog</a></li> 
-             <li class="nav"><a href="contact.html">Contact</a></li>
+             <li class="nav"><a href="contact">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
     </div>
      <!-- Content Area -->
-     <div class="row contentArea">
-       <div class="col-xs-12">
-        <h2>Welcome</h2>
-        <p class="contentArea">
-          Hello! My name is Kino Rose. I am an aspiring developer looking to create interactive, and easy to use software for users world wide. Completing projects is one key to becoming a great developer. Using the skills gained by using software tools such as Unity, Bootstrap, and JQuery; I hope to create software solutions that improve the lives of a variety of users.
-        </p>
-        </div>
+     <div ng-view class="row contentArea">
+
      </div>
+    
      <!--Footer Area -->
      <div class="row footer">
       <footer>
@@ -74,5 +72,8 @@
     <!--Script Area-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-route.js"></script>
   <script src="websiteScript.js"></script>
+  <script src="controllers.js"></script>
 </html>
