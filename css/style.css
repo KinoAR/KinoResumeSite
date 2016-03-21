@@ -129,8 +129,38 @@ li.nav {
 	width:auto;
 	background-color: #AE0000;
 }
+/* Partials */
+ul.portfolio-list {
+  list-style-type: none;
+}
 
+/* Content Area Animations */
+.contentArea {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.contentArea.ng-enter {
+  margin-left: -150%;
+  z-index: 2;
+  opacity: 0;
+}
 
+.contentArea.ng-enter.ng-enter-active {
+  margin-left: 0%;
+  z-index: 0;
+  opacity: 1;
+}
+
+.contentArea.ng-leave {
+  transition: 0.0000001s;
+  z-index: 1;
+  opacity: 1;
+}
+
+.contentArea.ng-leave.ng-leave-active {
+  z-index:0;
+  opacity: 0;
+}
 /* Content Area */
 div.contentArea {
 	color: #EDEDED;

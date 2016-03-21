@@ -1,5 +1,5 @@
 
-var resumeWebsite = angular.module("resumeWebsite", ['ngRoute', 'resumeWebsiteControllers']);
+var resumeWebsite = angular.module("resumeWebsite", ['ngRoute', 'ngAnimate', 'resumeWebsiteControllers']);
  
  //App Configuration for routes
 resumeWebsite.config(['$routeProvider', '$locationProvider',
