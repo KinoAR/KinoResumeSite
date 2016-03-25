@@ -67,11 +67,17 @@ div.portfolio-item {
 
 /*Header */
 div.header {
-	height:15vh;
-	box-shadow: 5px 1px 1px black,-2px 1px 1px black;
+	/* box-shadow: 5px 1px 1px black,-2px 1px 1px black; */
 	background-color:#101010;
+  /* #101010 */
 	background-size:cover;
-	background-image: url("../resources/Banner.png")
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0px;
+	/* background-image: url("../resources/Banner.png") */
 }
 
 img.header {
@@ -79,6 +85,34 @@ img.header {
 	height:100%;
 }
 
+img.profile-image {
+  margin-top: 67px;
+  min-height: 100px;
+  max-height: 125px;
+  margin-left: -10px;
+  margin-right: 0px;
+  border-radius:0px;
+  border: 1px solid #101010;
+  padding: 0px;
+}
+/* Jumbotron */
+.remove-padding {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-left: -15px;
+}
+.h1-style {
+  margin-top: 65px;
+  line-height: .7em;
+}
+ul.jumbotron-list {
+  list-style-type: none;
+  margin-left: 0px;
+}
+ul.jumbotron-list > li {
+  display:block;
+  float:left;
+}
 /*Navigation */
 nav.navigation {
 	padding-bottom: 0px;
@@ -90,7 +124,7 @@ nav.navigation {
   padding-bottom: 5px;
   margin-left: 0px;
   margin-right: 0px;
-  background-color:#AE0000;
+  background-color:#9C0707;
   border-radius: 0px;
 	border:none;
 }
@@ -101,7 +135,7 @@ div.navigate {
 div.navigation {
 	font-size: 30px;
 	text-decoration:none;
-	background-color:#AE0000;
+	background-color:#9C0707;
 	max-height: 10vh;
 	height:50px;
 	border:thin;
@@ -123,14 +157,47 @@ ul.nav
 }
 
 li.nav {
-	padding-top:0px;
+	padding:0px 0px 0px 0px;
 	display:block;
 	color:white;
 	width:auto;
-	background-color: #AE0000;
+	background-color: #9C0707;
+}
+/* Partials */
+ul.portfolio-list {
+  list-style-type: none;
 }
 
+/* Content Area Animations */
+.contentArea {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.contentArea.ng-enter {
+  margin-left: -150%;
+  z-index: 2;
+  opacity: 0;
+}
 
+.contentArea.ng-enter.ng-enter-active {
+  margin-left: 0%;
+  z-index: 0;
+  opacity: 1;
+}
+
+.contentArea.ng-leave {
+  position: absolute;
+  transition: 1.5s;
+  margin-left: 0%;
+  z-index: 1;
+  opacity: 1;
+}
+
+.contentArea.ng-leave.ng-leave-active {
+  margin-left: -150%;
+  z-index:0;
+  opacity: 0;
+}
 /* Content Area */
 div.contentArea {
 	color: #EDEDED;
@@ -140,6 +207,7 @@ div.contentArea {
 	background-color:#1C1C1C;
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
 	overflow:auto;
+  padding-bottom: 55px;
 }
 
 h2.contentArea {
@@ -160,6 +228,9 @@ p.contentArea {
 
  /* Footer */
 div.footer {
+  position: relative;
+  bottom: 50px;
+  width: inherit;
 	background-color:black;
 	min-height: 5vh;
 	height:50px;
@@ -169,7 +240,6 @@ div.footer {
  p.footer
  {
  	margin-top:0px;
-  width: 100%;
  }
 
  ul.footer {
@@ -177,12 +247,11 @@ div.footer {
   float:right;
   display: inline;
   list-style-type: none;
-  width: 200px;
  }
  li.footer {
   float:right;
   display:inline-block;
-  width: auto;
+  width:auto;
   margin-right: 5px;
  }
 .objectDisplay {
@@ -218,7 +287,6 @@ dd.contact {
 /* Links */
 a {
 	font-size: 1.3rem;
-
 }
 
 a:link,a:visited {
@@ -233,39 +301,56 @@ a:link,a:visited {
 a:hover {
 	text-transform: uppercase;
 	text-align: center;
-	color: white;
+	color: yellow;
 }
 
 /* Bootstrap override style */
-.navbar-default .navbar-nav>li>a {
-    color:white;
+
+/* Jumbotron */
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0px; 
 }
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
+/* Navigation */
+.navbar-default .navbar-nav>li>a {
+  color:white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color:white;
+  background-color: rgba(20, 20, 20, .9);
 }
 
+.navbar-default .navbar-brand {
+    color: #FFF;
+    margin-left: 5px;
+}
+
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 5px;
+}
+
+
 .nav>li>a {
-    position: relative;
-    display: inherit;
-    padding: 5px 15px;
+  position: relative;
+  display: inherit;
 }
 
 img.img-responsive {
  min-height: 175px;
  max-height: 250px;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: rgb(0, 0, 0);
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #CB0202;
 }
 .navbar-default .navbar-toggle {
     border-color: #ddd;
     border: 0px;
 }
 
+/* Buttons */
 .btn-primary {
     color: #fff;
     background-color: #AE0000;
@@ -293,6 +378,6 @@ img.img-responsive {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #AE0000;
+    background-color: #D10101;
     border-color: #AE0000;
 }
