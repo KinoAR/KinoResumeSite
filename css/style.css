@@ -86,12 +86,14 @@ img.header {
 }
 
 img.profile-image {
-  margin-top: 60px;
+  margin-top: 67px;
   min-height: 100px;
   max-height: 125px;
   margin-left: -10px;
   margin-right: 0px;
   border-radius:0px;
+  border: 1px solid #101010;
+  padding: 0px;
 }
 /* Jumbotron */
 .remove-padding {
