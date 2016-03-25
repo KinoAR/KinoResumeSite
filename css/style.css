@@ -69,7 +69,13 @@ div.portfolio-item {
 div.header {
 	/* box-shadow: 5px 1px 1px black,-2px 1px 1px black; */
 	background-color:#101010;
+  /* #101010 */
 	background-size:cover;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
   margin-bottom: 0px;
 	/* background-image: url("../resources/Banner.png") */
 }
@@ -80,7 +86,7 @@ img.header {
 }
 
 img.profile-image {
-  margin-top: 30px;
+  margin-top: 60px;
   min-height: 100px;
   max-height: 125px;
   margin-left: -10px;
@@ -92,6 +98,10 @@ img.profile-image {
   padding-bottom: 0px;
   padding-left: 0px;
   margin-left: -15px;
+}
+.h1-style {
+  margin-top: 65px;
+  line-height: .7em;
 }
 ul.jumbotron-list {
   list-style-type: none;
@@ -112,7 +122,7 @@ nav.navigation {
   padding-bottom: 5px;
   margin-left: 0px;
   margin-right: 0px;
-  background-color:#AE0000;
+  background-color:#9C0707;
   border-radius: 0px;
 	border:none;
 }
@@ -123,7 +133,7 @@ div.navigate {
 div.navigation {
 	font-size: 30px;
 	text-decoration:none;
-	background-color:#AE0000;
+	background-color:#9C0707;
 	max-height: 10vh;
 	height:50px;
 	border:thin;
@@ -149,7 +159,7 @@ li.nav {
 	display:block;
 	color:white;
 	width:auto;
-	background-color: #AE0000;
+	background-color: #9C0707;
 }
 /* Partials */
 ul.portfolio-list {
@@ -195,7 +205,7 @@ div.contentArea {
 	background-color:#1C1C1C;
 	box-shadow: 5px 10px 1px black,-2px 1px 1px black;
 	overflow:auto;
-  padding-bottom: 30px;
+  padding-bottom: 55px;
 }
 
 h2.contentArea {
@@ -216,9 +226,9 @@ p.contentArea {
 
  /* Footer */
 div.footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
+  position: relative;
+  bottom: 50px;
+  width: inherit;
 	background-color:black;
 	min-height: 5vh;
 	height:50px;
@@ -228,7 +238,6 @@ div.footer {
  p.footer
  {
  	margin-top:0px;
-  width: 100%;
  }
 
  ul.footer {
@@ -236,12 +245,11 @@ div.footer {
   float:right;
   display: inline;
   list-style-type: none;
-  width: 200px;
  }
  li.footer {
   float:right;
   display:inline-block;
-  width: auto;
+  width:auto;
   margin-right: 5px;
  }
 .objectDisplay {
@@ -296,6 +304,10 @@ a:hover {
 
 /* Bootstrap override style */
 
+/* Jumbotron */
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0px; 
+}
 /* Navigation */
 .navbar-default .navbar-nav>li>a {
   color:white;
